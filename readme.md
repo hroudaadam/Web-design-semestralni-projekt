@@ -1,9 +1,21 @@
 # Web design semestrální projekt
 ## Základní info
 - termín odevzdání - 13. 12. 2020
-- nahrát na KITLAB
-## Požadavky
-- 5 HTML stránek
+- nahrát na FTP KITLAB
+## Téma
+- eshop
+- 1x úvod, 1x přehled produktů, 1x detail produktu, 3x obj. proces
+- cca 10 produktů
+## Požadavky ze cvičení
+- 6 HTML stránek
+- optimalizováno pro mobily, tablety - mobile-first přístup
+- sémantika v HTML
+- bez frameworků
+- flexbox - aspoň 5 prvků
+- grid layout - aspoň 10 prvků
+- nadpisy, odstavce, seznamy, obrázky
+- přístupnost pro handicapované - stačí základní
+## Požadavky z Moodle
 - všechny soubory jsou pojmenovány malými písmeny, bez diakritiky a bez mezer a jsou umístěny ve složce public_html. Výchozí (úvodní) soubor se jmenuje index.html.
 - webová prezentace je tvořena dokumenty ve validním kódu HTML5 dle validátoru W3C (http://validator.w3.org)
 - webová prezentace je formátována kaskádovými styly (CSS) z jednoho externího stylopisu
