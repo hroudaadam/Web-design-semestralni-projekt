@@ -5,7 +5,7 @@
 - detail.html - Detail produktu (Filip)
 - cart.html - Seznam položek v košíku (Filip)
 - cart-customer.html - Fomulář zákazníka (Adam)
-- cart-summary.html - Shrnutí objednávky (Adam)
+- cart-payment.html - Platba objednávky (Adam)
 
 ## Základní info
 - termín odevzdání - 13. 12. 2020
