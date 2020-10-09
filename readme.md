@@ -1,11 +1,11 @@
 # Web design semestrální projekt
 ## Stuktura
 - index.html - Úvodní stránka (část sortimentu, slevy) (Dominik)
-- katalog.html - Seznam zboží (Dominik)
+- catalog.html - Seznam zboží (Dominik)
 - detail.html - Detail produktu (Filip)
 - cart.html - Seznam položek v košíku (Filip)
-- cart_customer.html - Fomulář zákazníka (Adam)
-- cart_summary.html - Shrnutí objednávky (Adam)
+- cart-customer.html - Fomulář zákazníka (Adam)
+- cart-summary.html - Shrnutí objednávky (Adam)
 
 ## Základní info
 - termín odevzdání - 13. 12. 2020
