@@ -1,1 +1,34 @@
 <!-- pracovní HTML stránka -->
+
+<article>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="cart.html">Obsah košíku</a></li>
+                <li> <a href="cart-customer.html">Dodací údaje</a></li>
+                <li> <a href="">Dokončení objednávky</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Doprava</legend>
+            <input type="radio" id="pickup" name="shipping" value="pickup">
+            <label for="pickup">Osobní odběr</label><br>
+            <input type="radio" id="deliver" name="shipping" value="deliver">
+            <label for="deliver">Doručení na adresu</label><br>
+            <input type="radio" id="post" name="shipping" value="post">
+            <label for="post">Balík na poštu</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Platba</legend>
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Platba kartou online</label><br>
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">Hotovost</label><br>
+        </fieldset>
+
+        <input type="submit" value="Odeslat objednávku"></input>
+    </form>
+</article>
