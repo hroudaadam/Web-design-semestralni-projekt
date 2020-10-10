@@ -1,3 +1,6 @@
+/* CSS reset */
+* {margin: 0; padding: 0;} 
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -29,4 +32,43 @@ p{
   .grid-title{
     font-family: Impact, Charcoal, sans-serif;
   }
+
+  /* -------------- Adam -------------- */
+
+  .appBar {
+    background-color: #2196F3;
+  }
+
+  .appBar * {
+    display: inline-block;
+  }
+
+  .brand {
+    font-size: 1.2em;
+    margin: 0px 10px;
+  }
+
+  .brand a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navItem a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+  }
+
+  .appBar form {
+    margin: auto;
+    float: right;
+  }
+
+  .navItem a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 5px 0px;
+    color: black;
+  }
+
   
