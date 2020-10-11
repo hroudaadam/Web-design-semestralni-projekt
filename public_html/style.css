@@ -28,5 +28,27 @@ p{
   }
   .grid-title{
     font-family: Impact, Charcoal, sans-serif;
+    
+  }
+  .grid-content{
+    font-family:  sans-serif;
+  }
+
+  .grid-footer{
+    font-family: Impact, Charcoal, sans-serif;
+    color: #f00;
+    display: grid;
+
   }
   
+
+a.button1 {
+  font-weight: 10%;
+  color: rgb(226, 217, 217);
+  text-decoration: none;
+  padding: 5%;
+  border-radius: 10px;
+  background: rgb(22, 24, 146);
+  transition: 0.2s;
+} 
+a.button1:hover { background: rgb(47, 50, 206); }
