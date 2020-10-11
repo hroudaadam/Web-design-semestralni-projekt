@@ -1,11 +1,8 @@
 /* CSS reset */
 * {margin: 0; padding: 0;} 
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-p{
+/* Dominik */ 
+p {
     text-align: left;
     font-size: 75%;
 }
