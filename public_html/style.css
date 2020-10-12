@@ -125,10 +125,17 @@ p {
 
 .cart-header {
   background-color: #f00;
+  padding: 20px 0px;
+}
+
+.cart-nav-list {
+  
+
 }
 
 .cart-nav-item {
-
+  display: inline;
+  color: black;
 }
 
 /* ------------ Adam - konec------------ */
