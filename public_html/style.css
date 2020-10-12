@@ -4,16 +4,17 @@
 /* Dominik */ 
 p {
     text-align: left;
-    font-size: 75%;
+    font-size: 0.8em;
 }
 
 .grid-container {
     display: grid;
+    height: auto;
     grid-template-columns: auto auto auto;
     background-color: rgba(128, 125, 125, 0.2);
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
-    padding: 1%;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    padding: 0.6em;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -24,41 +25,45 @@ p {
     text-align: center;
   }
 
-  .grid-content{
-    height: 350px;
-  }
-
   .grid-image {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 5%;
   }
   .grid-title{
+    text-align: center;
+    text-decoration: none;
     font-family: Impact, Charcoal, sans-serif;
+    font-size: 0.7em;
     
   }
   .grid-content{
     font-family:  sans-serif;
+    font-size: 0.5em;
+    height: 150px;
   }
+  button { 
+    color: rgb(226, 217, 217);
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 10px;
+    background: rgb(22, 24, 146);
+    transition: 0.2s;
+  } 
 
   .grid-footer{
     font-family: Impact, Charcoal, sans-serif;
+    font-size: 1em;
     color: #f00;
-    display: grid;
-
+    text-align: center;
+    margin-top: 1em;
+    display: inline-flex;
+    grid-column-gap: 0.8em;
   }
   
 
-a.button1 {
-  font-weight: 10%;
-  color: rgb(226, 217, 217);
-  text-decoration: none;
-  padding: 5%;
-  border-radius: 10px;
-  background: rgb(22, 24, 146);
-  transition: 0.2s;
-} 
-a.button1:hover { background: rgb(47, 50, 206); }
+
+.button1:hover { background: rgb(47, 50, 206); }
 
   /* -------------- Adam -------------- */
 
@@ -85,9 +90,9 @@ a.button1:hover { background: rgb(47, 50, 206); }
     color: black;
   }
 
-  .appBar form {
-    margin: auto;
-    float: right;
+  .right-bar{
+   padding: 10.5px 16px;
+    float: inline-end;    
   }
 
   .navItem a {
@@ -99,3 +104,18 @@ a.button1:hover { background: rgb(47, 50, 206); }
   }
 
   
+.content-container{
+  margin: 10px auto;
+width: 70%;
+background-color: antiquewhite;
+}
+
+#submit{
+  color: rgb(226, 217, 217);
+    text-decoration: none;
+    padding: 0.3em;
+    border-radius: 10px;
+    background: rgb(22, 24, 146);
+    transition: 0.2s;
+
+}
