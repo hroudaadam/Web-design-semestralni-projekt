@@ -65,46 +65,45 @@ p {
 
 .button1:hover { background: rgb(47, 50, 206); }
 
-  /* -------------- Adam -------------- */
+/* -------------- Adam -------------- */
 
-  .appBar {
-    background-color: #2196F3;
-  }
+.appBar {
+  background-color: #2196F3;
+}
 
-  .appBar * {
-    display: inline-block;
-  }
+.appBar * {
+  display: inline-block;
+}
 
-  .brand {
-    font-size: 1.2em;
-    margin: 0px 10px;
-  }
+.brand {
+  font-size: 1.2em;
+  margin: 0px 10px;
+}
 
-  .brand a {
-    text-decoration: none;
-    color: black;
-  }
+.brand a {
+  text-decoration: none;
+  color: black;
+}
 
-  .navItem a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: black;
-  }
+.navItem a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
 
-  .right-bar{
-   padding: 10.5px 16px;
-    float: inline-end;    
-  }
+.right-bar{
+  padding: 10.5px 16px;
+  float: inline-end;    
+}
 
-  .navItem a {
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 16px;
-    margin: 5px 0px;
-    color: black;
-  }
-
+.navItem a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 16px;
+  margin: 5px 0px;
+  color: black;
+}
   
-.content-container{
+.content-container {
   margin: 10px auto;
 width: 70%;
 background-color: antiquewhite;
