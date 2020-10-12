@@ -103,13 +103,15 @@ p {
   color: black;
 }
   
-.content-container{
+.content-container {
   margin: 10px auto;
 width: 70%;
 background-color: antiquewhite;
 }
 
-.input
+.form-text-input {
+  border-radius: 5px;
+}
 
 /* ------------ Adam - konec------------ */
 
