@@ -1,5 +1,14 @@
-/* CSS reset */
-* {margin: 0; padding: 0;} 
+/* -------------- Global -------------- */
+/* CSS RESET */
+* {
+  margin: 0; 
+  padding: 0;
+} 
+
+a {
+  text-decoration: none;
+}
+/* ----------- Global - konec ----------- */
 
 /* Dominik */ 
 p {
@@ -35,7 +44,7 @@ p {
     text-decoration: none;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 0.7em;
-    
+    color: rgb(40, 40, 238);
   }
   .grid-content{
     font-family:  sans-serif;
@@ -43,6 +52,7 @@ p {
     height: 150px;
   }
   .button1 { 
+    display: block;
     color: rgb(226, 217, 217);
     text-decoration: none;
     padding: 0.3em;
@@ -105,6 +115,20 @@ p {
   
 .content-container {
   margin: 10px auto;
-width: 70%;
-background-color: antiquewhite;
+  width: 70%;
+  background-color: antiquewhite;
 }
+
+.form-text-input {
+  border-radius: 5px;
+}
+
+.cart-header {
+  background-color: #f00;
+}
+
+.cart-nav-item {
+
+}
+
+/* ------------ Adam - konec------------ */
