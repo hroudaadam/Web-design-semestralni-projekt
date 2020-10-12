@@ -92,7 +92,7 @@ p {
 
 .right-bar{
   padding: 10.5px 16px;
-  float: inline-end;    
+  float: right;    
 }
 
 .navItem a {
