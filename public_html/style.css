@@ -132,13 +132,3 @@ p {
 }
 
 /* ------------ Adam - konec------------ */
-
-#submit{
-  color: rgb(226, 217, 217);
-    text-decoration: none;
-    padding: 0.3em;
-    border-radius: 10px;
-    background: rgb(22, 24, 146);
-    transition: 0.2s;
-
-}
