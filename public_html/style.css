@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 /* ----------- Global - konec ----------- */
 
@@ -126,6 +127,17 @@ p {
 .cart-header {
   background-color: #f00;
   padding: 20px 0px;
+  text-align: center;
+}
+
+.cart-nav-list {
+
+}
+
+.cart-nav-item {
+  display: inline-block;
+  color: black;
+  background-color: khaki;
 }
 
 
