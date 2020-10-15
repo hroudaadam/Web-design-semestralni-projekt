@@ -36,7 +36,7 @@
                 <!-- Vyhledání -->
                 <label for="search">Hledat</label>
                 <input type="text" id="search"></input>
-                <input id ="submit" type="submit" value="Hledat"></input>
+                <input id="submit" type="submit" value="Hledat"></input>
             </form>
             <a href="cart.html" class="button1">Košík</a>
         </div>
@@ -48,37 +48,49 @@
                 <nav>
                     <ul class="cart-nav-list">
                         <li class="cart-nav-item">
-                             <a href="./cart.html">Obsah košíku</a>
-                             <span class="cart-nav-divider">></span>
+                            <a class="cart-nav-item-title" href="./cart.html">Obsah košíku</a>
+                            <span class="cart-nav-item-divider">></span>
                         </li>
-                        <li class="cart-nav-item"> <a href="">Dodací údaje</a></li>
-                        <li class="cart-nav-item"> <a href="./cart-payment.html">Dokončení objednávky</a></li>
+                        <li class="cart-nav-item cart-nav-item--active">
+                            <a class="cart-nav-item-title" href="">Dodací údaje</a>
+                            <span class="cart-nav-item-divider">></span>
+                        </li>
+                        <li class="cart-nav-item"> 
+                            <a class="cart-nav-item-title" href="./cart-payment.html">Dokončení objednávky</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
-            <form>
-                <label for="firstName">Jméno</label>
-                <input class="form-text-input" type="text" id="firstName"></input>
-                <br />
-                <label for="lastName">Příjmení</label>
-                <input type="text" id="lastName"></input>
-                <br />
-                <label for="email">Email</label>
-                <input type="email" id="email"></input>
-                <br />
-                <label for="phone">Telefon</label>
-                <input type="tel" id="phone"></input>
-                <br />
-                <label for="street">Ulice</label>
-                <input type="text" id="street"></input>
-                <br />
-                <label for="city">Město</label>
-                <input type="text" id="city"></input>
-                <br />
-                <label for="zip">PSČ</label>
-                <input type="text" id="zip"></input>
-                <br />
-                <input type="submit" value="Pokračovat"></input>
+            <form class="form">
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="text" id="firstName" placeholder="Jméno"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="text" id="lastName" placeholder="Příjmení"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="email" id="email" placeholder="Email"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="tel" id="phone" placeholder="Telefon"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="text" id="street" placeholder="Ulice"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="text" id="city" placeholder="Město"></input>
+                </fieldset>
+
+                <fieldset class="form-field">
+                    <input class="form-text-input" type="text" id="zip" placeholder="PSČ"></input>
+                </fieldset>
+
+                <input class="button center" type="submit" value="Pokračovat"></input>
             </form>
         </article>
     </main>
