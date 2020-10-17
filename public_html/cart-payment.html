@@ -36,7 +36,7 @@
                 <!-- Vyhledání -->
                 <label for="search">Hledat</label>
                 <input type="text" id="search"></input>
-                <input id ="submit" type="submit" value="Hledat"></input>
+                <input class="button1" type="submit" value="Hledat"></input>
             </form>
             <a href="cart.html" class="button1">Košík</a>
         </div>
@@ -44,12 +44,20 @@
 
     <main>
         <article class="content-container">
-            <header>
+            <header class="cart-header">
                 <nav>
-                    <ul>
-                        <li> <a href="./cart.html">Obsah košíku</a></li>
-                        <li> <a href="./cart-customer.html">Dodací údaje</a></li>
-                        <li> <a href="">Dokončení objednávky</a></li>
+                    <ul class="cart-nav-list">
+                        <li class="cart-nav-item" >
+                            <a class="cart-nav-item-title" href="./cart.html">Obsah košíku</a>
+                            <span class="cart-nav-item-divider">></span>
+                        </li>
+                        <li class="cart-nav-item">
+                            <a class="cart-nav-item-title" href="./cart-customer.html">Dodací údaje</a>
+                            <span class="cart-nav-item-divider">></span>
+                        </li>
+                        <li class="cart-nav-item cart-nav-item--active"> 
+                            <a class="cart-nav-item-title" href="">Dokončení objednávky</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
