@@ -47,7 +47,7 @@
             <header class="cart-header">
                 <nav>
                     <ul class="cart-nav-list">
-                        <li class="cart-nav-item" >
+                        <li class="cart-nav-item">
                             <a class="cart-nav-item-title" href="./cart.html">Obsah košíku</a>
                             <span class="cart-nav-item-divider">></span>
                         </li>
@@ -55,41 +55,50 @@
                             <a class="cart-nav-item-title" href="./cart-customer.html">Dodací údaje</a>
                             <span class="cart-nav-item-divider">></span>
                         </li>
-                        <li class="cart-nav-item cart-nav-item--active"> 
+                        <li class="cart-nav-item cart-nav-item--active">
                             <a class="cart-nav-item-title" href="">Dokončení objednávky</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <form>
-                <fieldset>
-                    <legend>Doprava</legend>
-                    <input type="radio" id="pickup" name="shipping" value="pickup">
-                    <label for="pickup">Osobní odběr</label><br>
-                    <input type="radio" id="deliver" name="shipping" value="deliver">
-                    <label for="deliver">Doručení na adresu</label><br>
-                    <input type="radio" id="post" name="shipping" value="post">
-                    <label for="post">Balík na poštu</label>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Platba</legend>
-                    <input type="radio" id="card" name="payment" value="card">
-                    <label for="card">Platba kartou online</label><br>
-                    <input type="radio" id="cash" name="payment" value="cash">
-                    <label for="cash">Hotovost</label><br>
-                </fieldset>
-        
-                <input type="submit" value="Odeslat objednávku"></input>
+            <form class="form">
+
+                <h4 class="form-block-area-title">Doprava</h4>
+                <section class="form-block-area">
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="pickup" name="shipping" value="pickup">
+                        <label for="pickup">Osobní odběr</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="deliver" name="shipping" value="deliver">
+                        <label for="deliver">Doručení na adresu</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="post" name="shipping" value="post">
+                        <label for="post">Balík na poštu</label>
+                    </fieldset>
+
+                </section>
+
+                <h4 class="form-block-area-title">Platba</h4>
+                <section class="form-block-area">
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="card" name="payment" value="card">
+                        <label for="card">Platba kartou online</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Hotovost</label>
+                    </fieldset>
+                </section>
+
+                <input class="button" type="submit" value="Odeslat objednávku"></input>
             </form>
         </article>
     </main>
-
-    <footer>
-        <p>
-            Semestrální projekt vytvořený v rámci předmětu Web design na České zemědělské univerzitě v roce 2020
-        </p>
-    </footer>
 </body>
 
 </html>

@@ -12,7 +12,7 @@ a {
 /* ----------- Global - konec ----------- */
 
 /* Dominik */ 
-p {
+.grid-contetnt-text {
     text-align: left;
     font-size: 0.8em;
 }
@@ -121,12 +121,29 @@ p {
 }
 
 .form {
-  text-align: center;  
+  
+}
+
+.text-center {
+  text-align: center;   
 }
 
 .form-field {
   border: none;
   margin-bottom: 5px;
+}
+
+.form-block-area {
+  margin-bottom: 5px;
+  border-width: 0.2px;
+  border-style: dashed;
+  border-color: gray;
+  padding: 5px;
+}
+
+.form-block-area-title {
+  margin-bottom: 5px;
+  font-size: 1.2em;
 }
 
 .form-label {
@@ -142,7 +159,9 @@ p {
   display: block;
   margin: 0px auto;
   text-indent: 3px;
-  width: 40vh;
+  height: 20px;
+  width: 300px;
+  
 }
 
 .form-text-input:focus {
@@ -156,6 +175,7 @@ p {
   border-bottom: solid;
   border-color: gray;
   border-width: 0.5px;
+  font-size: 1.3em;
 }
 
 .cart-nav-list {
@@ -176,12 +196,18 @@ p {
 
 .button {
   display: block;
-  font-size: 0.7em;
   padding: 4px 15px; 
   border-radius: 5px;
   border-width: 0px;
   background-color: #2196F3;
+  font-size: 1.2em;
   color: white;
+}
+
+
+
+.radio {
+  
 }
 
 .center {
