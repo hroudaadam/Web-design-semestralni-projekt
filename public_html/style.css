@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 /* ----------- Global - konec ----------- */
 
@@ -23,7 +24,7 @@ p {
     background-color: rgba(128, 125, 125, 0.2);
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
-    padding: 0.6em;
+    padding: 0.6em; /* nemuselo by zde být, může být rozáhlé po celé oblasti content-container; Adam*/
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -116,16 +117,75 @@ p {
 .content-container {
   margin: 10px auto;
   width: 70%;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+}
+
+.form {
+  text-align: center;  
+}
+
+.form-field {
+  border: none;
+  margin-bottom: 5px;
+}
+
+.form-label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .form-text-input {
-  border-radius: 5px;
+  border-radius: 3px;
+  border-width: 1px;
+  display: block;
+  margin: 0px auto;
+  text-indent: 3px;
+  width: 40vh;
+}
+
+.form-text-input:focus {
+  border-width: 1.5px;
 }
 
 .cart-header {
-  background-color: #f00;
-  padding: 20px 0px;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  border-bottom: solid;
+  border-color: gray;
+  border-width: 0.5px;
+}
+
+.cart-nav-list {
+
+}
+
+.cart-nav-item {
+  display: inline-block;
+}
+
+.cart-nav-item--active {
+  font-weight: bold;
+}
+
+.cart-nav-item-title:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: block;
+  font-size: 0.7em;
+  padding: 4px 15px; 
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #2196F3;
+  color: white;
+}
+
+.center {
+  margin: 0px auto;
 }
 
 
