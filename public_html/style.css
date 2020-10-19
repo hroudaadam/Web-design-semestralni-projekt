@@ -216,3 +216,86 @@ a {
 
 
 /* ------------ Adam - konec------------ */
+
+/* ------------ Filip ------------ */
+
+.image_detail {
+/*#c#@@#?*/
+
+}
+.button_detail {
+  display: block;
+  color: rgb(226, 217, 217);
+  text-decoration: none;
+  padding: 0.3em;
+  border-radius: 10px;
+  background: rgb(22, 24, 146);
+  transition: 0.2s;
+  width: 250px;
+  height: 75px;
+  font-size: 30px;
+}
+
+.h1_detail {
+  font-size: 35px;
+  font-family: Arial;
+}
+
+.h2_detail {
+  font-size: 30px;
+  font-family: Arial;
+  text-align: center;
+
+}
+.text_detail {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+#info_det {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+#info_det td, #info_det th {
+  border: 0px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+#info_det th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+#param {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#param td, #param th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#param tr:nth-child(even){background-color: #f2f2f2;}
+
+#param tr:hover {background-color: #ddd;}
+
+#param th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+/* ------------ Filip - konec ------------ */
