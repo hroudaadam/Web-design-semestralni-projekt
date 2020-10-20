@@ -1,4 +1,4 @@
-/* -------------- Global -------------- */
+/* -------------- FIXES -------------- */
 /* CSS RESET */
 * {
   margin: 0; 
@@ -9,7 +9,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* ----------- Global - konec ----------- */
+
+.li-fix {
+  position: relative;
+  left: 1em;
+  padding-right: 1em;    
+}​
+
+
+
+/* ----------- FIXES - konec ----------- */
 
 /* Dominik */ 
 .grid-contetnt-text {
@@ -21,7 +30,7 @@ a {
     display: grid;
     height: auto;
     grid-template-columns: auto auto auto;
-    background-color: rgba(128, 125, 125, 0.2);
+    /* background-color: rgba(128, 125, 125, 0.2); */
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
     padding: 0.6em; /* nemuselo by zde být, může být rozáhlé po celé oblasti content-container; Adam*/
@@ -267,8 +276,6 @@ a {
   background-color: #4CAF50;
   color: white;
 }
-
-
 
 #param {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
