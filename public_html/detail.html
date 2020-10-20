@@ -12,30 +12,38 @@
 <body>
     <!-- Hlavička -->
     <header class="appBar">
-        <h1 class="brand"><a href="../index.html">Web design - projekt</a> </h1>
+        <h1 class="brand"><a href="index.html">Web design - projekt</a> </h1>
 
         <nav>
             <ul>
                 <li class="navItem">
                     <!-- Navigační položka -->
-                    <a href="./catalog.html">Katalog</a>
-                </li>  
+                    <a href="catalog.html">Katalog</a>
+                </li>
                 <li class="navItem">
-                    <a href="./cart.html">Košík</a>
-                </li>   
+                    <!--Neaktivní položka -->
+                    <a href="">Kontakty</a>
+                </li>
+                <li class="navItem">
+                    <!-- Neaktivní položka -->
+                    <a href="">Obchodní podmínky</a>
+                </li>
+
             </ul>
         </nav>
-        <form>
-            <!-- Vyhledání -->
-            <label for="search">Hledat</label>
-            <input type="text" id="search"></input>
-            <input type="submit" value="Hledat"></input>
-        </form>
-
+        <div class="right-bar">
+            <form>
+                <!-- Vyhledání -->
+                <label for="search">Hledat</label>
+                <input type="text" id="search"></input>
+                <input class="button1" id="submit" type="submit" value="Hledat"></input>
+            </form>
+            <a href="cart.html" class="button1">Košík</a>
+        </div>
     </header>
 
     <main>
-        <article>
+        <article class="content-container">
             <img class="image_detail" id="image1" src="./images/tel1.jpg" width="10%" alt="Xiaomi Red 8T LTE">
             <h1 class="h1_detail">Xiaomi Redmi Note 8T LTE 64GB</h1>
             <table id="info_det">
@@ -53,7 +61,7 @@
                 </tr>
             </table>
 
-             <form><input class="button_detail" type="submit" value="Vložit do košíku"></input></form>
+            <form><input class="button_detail" type="submit" value="Vložit do košíku"></input></form>
 
 
 
@@ -123,18 +131,9 @@
                     <td>Operační paměť</td>
                     <td>4GB</td>
                 </tr>
-             </table>  -->
-
-
-        
+            </table>
         </article>
     </main>
-
-    <footer>
-        <p>
-            Semestrální projekt vytvořený v rámci předmětu Web design na České zemědělské univerzitě v roce 2020
-        </p>
-    </footer>
 </body>
 
 </html>
