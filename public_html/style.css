@@ -219,10 +219,7 @@ a {
 
 /* ------------ Filip ------------ */
 
-.image_detail {
-/*#c#@@#?*/
 
-}
 .button_detail {
   display: block;
   color: rgb(226, 217, 217);
@@ -234,15 +231,16 @@ a {
   width: 250px;
   height: 75px;
   font-size: 30px;
+
 }
 
 .h1_detail {
-  font-size: 35px;
+  font-size: 25px;
   font-family: Arial;
 }
 
 .h2_detail {
-  font-size: 30px;
+  font-size: 20px;
   font-family: Arial;
   text-align: center;
 
@@ -298,4 +296,16 @@ a {
   background-color: #4CAF50;
   color: white;
 }
+
+.flex_detail {
+  display: flex;
+  justify-content: center;
+}
+
+.flex_detail > div {
+  width: 450px;
+  margin: 10px;
+  line-height: 75px;
+}
+
 /* ------------ Filip - konec ------------ */
