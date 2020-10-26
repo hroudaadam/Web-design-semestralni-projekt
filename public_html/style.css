@@ -242,40 +242,22 @@ a {
 
 .h1_detail {
   font-size: 25px;
-  font-family: Arial;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 .h2_detail {
   font-size: 20px;
-  font-family: Arial;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   text-align: center;
 
 }
 .text_detail {
   font-size: 20px;
-  font-family: Arial;
-}
-
-#info_det {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 30%;
 }
 
-#info_det td, #info_det th {
-  border: 0px;
-  padding: 8px;
-  font-size: 20px;
-}
 
-#info_det th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-}
-
+/*tabulka s parametry telefonu*/
 #param {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -290,7 +272,6 @@ a {
 }
 
 #param tr:nth-child(even){background-color: #f2f2f2;}
-
 #param tr:hover {background-color: #ddd;}
 
 #param th {
@@ -301,15 +282,30 @@ a {
   color: white;
 }
 
+/*flex box pro detail telefonu*/
+* {
+  box-sizing: border-box;
+}
+
 .flex_detail {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.flex_detail > div {
-  width: 450px;
-  margin: 10px;
+.flex-item-left {
   line-height: 75px;
 }
+
+.flex-item-right {
+  line-height: 75px;
+}
+@media (max-width: 1120px) {
+  .flex_detail {
+    flex-direction: column;
+        width: 75%;
+  }
+}
+
 
 /* ------------ Filip - konec ------------ */
