@@ -283,9 +283,7 @@ a {
 
 /*flex box pro detail telefonu*/
 
-
 .flex_detail {
-  /*display: flex;*/
   flex-wrap: nowrap;
   flex-direction: column;
   flex: 100%
@@ -304,5 +302,49 @@ img {
 }
 
 
+/*flex box pro cart*/
+.flex_cart {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  }
+
+
+@media (min-width: 725px) {
+  .flex_cart {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: left;
+    line-height: 40px;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fat_text{
+  font-weight:600;
+}
+
+.button_cart {
+  display: block;
+  padding: 4px 15px;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #2196F3;
+  font-size: 1.2em;
+  color: white;
+
+}
+@media (min-width: 725px) {
+  .button_cart{
+    float: right;
+  }
+}
 
 /* ------------ Filip - konec ------------ */
