@@ -225,10 +225,7 @@ a {
 
 /* ------------ Filip ------------ */
 
-.image_detail {
-/*#c#@@#?*/
 
-}
 .button_detail {
   display: block;
   color: rgb(226, 217, 217);
@@ -238,52 +235,34 @@ a {
   background: rgb(22, 24, 146);
   transition: 0.2s;
   width: 250px;
-  height: 75px;
+  height: 50px;
   font-size: 30px;
+
 }
 
 .h1_detail {
-  font-size: 35px;
-  font-family: Arial;
+  font-size: 25px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 .h2_detail {
-  font-size: 30px;
-  font-family: Arial;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   text-align: center;
 
 }
 .text_detail {
   font-size: 20px;
-  font-family: Arial;
-}
-
-#info_det {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 30%;
 }
 
-#info_det td, #info_det th {
-  border: 0px;
-  padding: 8px;
-  font-size: 20px;
-}
 
-#info_det th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-}
-
+/*tabulka s parametry telefonu*/
 #param {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+
 }
 
 #param td, #param th {
@@ -292,7 +271,6 @@ a {
 }
 
 #param tr:nth-child(even){background-color: #f2f2f2;}
-
 #param tr:hover {background-color: #ddd;}
 
 #param th {
@@ -302,4 +280,71 @@ a {
   background-color: #4CAF50;
   color: white;
 }
+
+/*flex box pro detail telefonu*/
+
+.flex_detail {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex: 100%
+}
+
+@media (min-width: 750px) {
+  .flex_detail {
+    display: inline-flex;
+    flex-direction: row;
+    line-height: 60px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*flex box pro cart*/
+.flex_cart {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  }
+
+
+@media (min-width: 725px) {
+  .flex_cart {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: left;
+    line-height: 40px;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fat_text{
+  font-weight:600;
+}
+
+.button_cart {
+  display: block;
+  padding: 4px 15px;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #2196F3;
+  font-size: 1.2em;
+  color: white;
+
+}
+@media (min-width: 725px) {
+  .button_cart{
+    float: right;
+  }
+}
+
 /* ------------ Filip - konec ------------ */

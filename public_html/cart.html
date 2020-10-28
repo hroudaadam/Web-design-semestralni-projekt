@@ -2,6 +2,7 @@
 <html lang="cs-cz">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Wed design - projekt
     </title>
@@ -60,32 +61,42 @@
                     </ul>
                 </nav>
             </header>
-            <img id="image1" src="./images/tel1.jpg" width="5%" alt="Xiaomi Red 8T LTE">
-            <p>Xiaomi Redmi Note 8T LTE 64GB</p>
-            <p>Cena bez dph : 4131CZK,-</p>
-            <p>Cena včetně dph : 5999CZK,-</p>
 
-            <form>
-                <input type="checkbox" id="zaruka" name="check1" value="Bike">
-                <label for="zaruka"> Chci prodloužit záruku o 1 rok +599CZK</label><br>
-                <input type="checkbox" id="folie" name="check2" value="Car">
-                <label for="folie"> Chci aplikovat ocharannou folii +199CZK</label><br>
-            </form>
+            <div class="flex_cart">
+                <div>
+                    <img id="image1" src="./images/tel1.jpg" width="150px" height="225px" alt="Xiaomi Red 8T LTE">
+                </div>
+                <div>
+                    <p class="fat_text">Xiaomi Redmi Note 8T LTE 64GB</p>
+                    <p>Cena bez dph : 4131CZK,-</p>
+                    <p>Cena včetně dph : 5999CZK,-</p>
+                    <form>
+                        <input type="checkbox" id="zaruka" name="check1" value="Bike">
+                        <label for="zaruka"> Chci prodloužit záruku o 1 rok +599CZK</label><br>
+                        <input type="checkbox" id="folie" name="check2" value="Car">
+                        <label for="folie"> Chci aplikovat ocharannou folii +199CZK</label><br>
+                    </form>
+                </div>
+            </div>
 
-            <img id="image5" src="./images/tel5.jpg" width="5%" alt="Samsung S20">
-            <p>Samsung Galaxy S20</p>
-            <p>Cena bez dph : 19007CZK,-</p>
-            <p>Cena včetně dph : 22999CZK,-</p>
+            <div class="flex_cart">
+                <div>
+                    <img id="image5" src="./images/tel5.jpg" width="150px" height="225px" alt="Samsung S20">
+                </div>
+                <div>
+                    <p class="fat_text">Samsung Galaxy S20</p>
+                    <p>Cena bez dph : 19007CZK,-</p>
+                    <p>Cena včetně dph : 22999CZK,-</p>
+                    <form>
+                         <input type="checkbox" id="zaruka2">
+                         <label for="zaruka"> Chci prodloužit záruku o 1 rok +2756CZK</label><br>
+                         <input type="checkbox" id="folie2">
+                         <label for="folie"> Chci aplikovat ocharannou folii +399CZK</label><br>
+                     </form>
+                </div>
+            </div>
 
-            <form>
-                <input type="checkbox" id="zaruka2">
-                <label for="zaruka"> Chci prodloužit záruku o 1 rok +2756CZK</label><br>
-                <input type="checkbox" id="folie2">
-                <label for="folie"> Chci aplikovat ocharannou folii +399CZK</label><br>
-            </form>
-
-
-            <form><input class="button" type="submit" value="Pokračovat"></input></form>
+            <button class="button_cart" onclick="document.location='cart-payment.html'">Pokračovat</button>
         </article>
     </main>
 </body>
