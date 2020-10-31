@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <title>
+        Wed design - projekt
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body class="body-background">
+    <header class="app-bar">
+        <h1 class="brand"><a href="index.html">MELL.CZ</a> </h1>
+
+        <nav class="app-nav">
+            <a class="" href="catalog.html">Katalog</a>
+
+            <a class="" href="">Kontakty</a>
+
+            <a class="active" href="cart.html">Košík</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="content-box">
+            <header class="cart-header">
+                <nav class="cart-nav">
+                    <a class="cart-nav-item" href="./cart.html">Obsah</a>
+                    <span class="cart-nav-item-separator">-</span>
+                    <a class="cart-nav-item" href="./cart-customer.html">Údaje</a>
+                    <span class="cart-nav-item-separator">-</span>
+                    <a class="cart-nav-item  active" href="./cart-payment.html">Dokončení</a>
+                </nav>
+            </header>
+
+            <form class="form">
+
+                <h2 class="title-2">Doprava</h2>
+                <section class="form-block-area">
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="pickup" name="shipping" value="pickup">
+                        <label for="pickup">Osobní odběr</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="deliver" name="shipping" value="deliver">
+                        <label for="deliver">Doručení na adresu</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="post" name="shipping" value="post">
+                        <label for="post">Balík na poštu</label>
+                    </fieldset>
+
+                </section>
+
+                <h2 class="title-2">Platba</h2>
+                <section class="form-block-area">
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="card" name="payment" value="card">
+                        <label for="card">Platba kartou online</label>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <input class="radio" type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Hotovost</label>
+                    </fieldset>
+                </section>
+
+                <input class="button" type="submit" value="Dokončit"></input>
+            </form>
+
+        </article>
+    </main>
+</body>
+
+</html>

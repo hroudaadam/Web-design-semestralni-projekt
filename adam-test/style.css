@@ -1,4 +1,6 @@
-/* FIXES */
+/* COMMON */
+
+/* CSS reset */
 * {
     margin: 0px;
     padding: 0px;
@@ -14,13 +16,9 @@ a {
     margin-left: 1em;
 }
 
-/* -------------- */
-
 :root {
     --primary: #0f68c2;
 }
-
-/* MAIN */
 
 .main {
     margin: 10px 10px;
@@ -55,7 +53,7 @@ a {
     font-weight: normal;
     font-size: 1.2em;
     color: var(--primary);
-  }
+}
 
 
 /* -------------- */
@@ -63,10 +61,9 @@ a {
 /* APP BAR */
 
 .app-bar {
-    background-color:rgb(108, 116, 129);
+    background-color:rgb(64, 75, 94);
     padding: 8px 8px;
-    position: sticky;
-    top: 0;
+    position: relative;
     overflow: hidden;
 }
 
@@ -77,9 +74,13 @@ a {
 }
 
 .app-nav {
-    float: none;    
+    display: none;
+    float: none;  
 }
 
+.app-nav-active {
+    display: block;
+}
 
 .app-nav a {    
     display: block;
@@ -100,8 +101,10 @@ a {
 
 .app-nav-collapse {
     float: right;
-    padding: 10px 12px;
+    padding: 8px 12px;
+    margin: 5px;
     border-radius: 2px;
+    border-width: 0.5px;
     border-style: none;
     background-color: rgba(255, 255, 255, 0.7)
 }
@@ -191,17 +194,16 @@ a {
 .cart-customer-form {
 }
 
-.cart-customer-form fieldset {
-    border: none;
-    margin-bottom: 5px;
-}
-
-.cart-customer-form fieldset input {
-    border-radius: 3px;
-    border-width: 1px;
+.cart-customer-form input {
     display: block;
     margin: 0px auto;
+}
+
+.cart-customer-form input:not([type="submit"]) {
+    border-radius: 3px;
+    border-width: 1px;
     text-indent: 3px;
+    margin: 0px auto 5px auto;
     width: 300px;
     height: 25px;
 }
@@ -209,6 +211,28 @@ a {
 /* --------------- */
 
 
+/* DETAIL */
+.detail-image {
+    padding: 10px;
+    width: 200px;
+    display: block;
+}
+
+.spacification-table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.spacification-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.spacification-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* --------------- */
 
 @media screen and (min-width: 600px) {
     .main {
@@ -220,8 +244,14 @@ a {
         display: inline-block;
         margin-top: 5px;
     }
+
+    .app-bar {
+        position: sticky;
+        top: 0;
+    }
     
     .app-nav {
+        display: block;
         float: right;
         margin-top: 8px;
     }
@@ -234,7 +264,7 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
       }
 
-      .app-nav-collapse {
+    .app-nav-collapse {
           visibility: hidden;
       }
   }
