@@ -12,9 +12,11 @@
 </head>
 
 <body>
+    <!-- Navigace -->
     <header class="appbar">
         <div class="appbar-main">
             <h1><a href="index.html">MELL.CZ</a></h1>
+            <!-- Rozevirani menu -->
             <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
         </div>
         <nav class="appbar-nav">
@@ -24,8 +26,10 @@
         </nav>
     </header>
 
+    <!-- Obsah -->
     <main class="main">
         <article class="content-box">
+            <!-- Navigace košíku -->
             <header class="cart-header">
                 <nav class="cart-nav">
                     <a class="cart-nav-item" href="./cart.html">Obsah</a>
@@ -36,7 +40,9 @@
                 </nav>
             </header>
 
-            <form class="cart-payment-form">                
+            <!-- Formulář platby a dopravy -->
+            <form class="cart-payment-form">   
+                <!-- Doprava -->
                 <section class="cart-form-area">
                     <h2 class="title-2">Doprava</h2>
                     <fieldset>
@@ -53,9 +59,9 @@
                         <input class="radio" type="radio" id="post" name="shipping" value="post">
                         <label for="post">Balík na poštu</label>
                     </fieldset>
-
                 </section>
 
+                <!-- Platba -->
                 <section class="cart-form-area">
                     <h2 class="title-2">Platba</h2>
                     <fieldset class="form-field">
