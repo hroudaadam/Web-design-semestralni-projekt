@@ -8,19 +8,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body class="body-background">
-    <!-- Hlavička -->
-
-    <header class="app-bar">
-        <h1 class="brand"><a href="index.html">MELL.CZ</a> </h1>
-
-        <nav class="app-nav">
+<body>
+    <header class="appbar">
+        <div class="appbar-main">
+            <h1><a href="index.html">MELL.CZ</a></h1>
+            <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
+        </div>
+        <nav class="appbar-nav">
             <a class="active" href="catalog.html">Katalog</a>
-
             <a class="" href="">Kontakty</a>
-
             <a class="" href="cart.html">Košík</a>
         </nav>
     </header>
@@ -32,8 +31,8 @@
                     <img src="./images/tel1.jpg" class="detail-image" alt="Xiaomi Red 8T LTE">
                     <div>
                         <h2 class="title-2">Xiaomi Redmi Note 8T LTE 64GB</h2>
-                        <p>Cena bez dph: 4131CZK,- </p>
-                        <p>Cena včetně dph: 5999CZK,-</p>
+                        <p>Cena bez DPH: 4131 ,- </p>
+                        <p>Cena včetně DPH: 5999 ,-</p>
                         <p>Obsah balení: Telefon, nabíječka, sluchátka </p>
                     </div>
                     <button class="button">Vložit do košíku</button>

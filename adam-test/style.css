@@ -1,10 +1,17 @@
 /* COMMON */
+:root {
+    --primary: #0f68c2;
+}
 
 /* CSS reset */
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226, 233, 238);
 }
 
 a {
@@ -16,16 +23,9 @@ a {
     margin-left: 1em;
 }
 
-:root {
-    --primary: #0f68c2;
-}
 
 .main {
     margin: 10px 10px;
-}
-
-.body-background {
-    background-color: rgb(226, 233, 238);
 }
 
 .content-box {
@@ -60,54 +60,74 @@ a {
 
 /* APP BAR */
 
-.app-bar {
+.appbar {
     background-color:rgb(64, 75, 94);
-    padding: 8px 8px;
-    position: relative;
-    overflow: hidden;
-}
-
-.brand {
-    display: inline-block;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.app-nav {
-    display: none;
-    float: none;  
-}
-
-.app-nav-active {
-    display: block;
-}
-
-.app-nav a {    
-    display: block;
-    color: white;
-    padding: 7px;
-    font-size: 18px;
-    border-radius: 4px;
-}
-
-.app-nav a:hover {
-    background-color: rgba(248, 248, 248, 0.3);
-}
-
-.app-nav a.active {
-    background-color: var(--primary);
-    color: white;
-}
-
-.app-nav-collapse {
-    float: right;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 7px 10px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .appbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .appbar-collapse {
     padding: 8px 12px;
-    margin: 5px;
     border-radius: 2px;
     border-width: 0.5px;
     border-style: none;
-    background-color: rgba(255, 255, 255, 0.7)
-}
+    background-color: rgb(255, 255, 255)
+  }
+  
+  .appbar-nav {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .appbar-nav.active {
+    display: flex;
+  }
+  
+  .appbar-nav a {
+    display: block;
+    color: white;
+    padding: 7px;
+    margin: 0 5px;
+    border-radius: 4px;
+  }
+  
+  .appbar-nav a:hover {
+    background-color: var(--primary);
+  }
+  
+  .appbar-nav a.active {
+    background-color: var(--primary);
+  }
+
+  @media screen and (min-width: 600px) {
+    .appbar {
+      flex-direction: row;
+    }
+    
+    .appbar-collapse {
+      display: none;
+    }
+  
+    .appbar-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
 /* --------------- */
 
 /* CATALOG */
@@ -263,31 +283,7 @@ a {
         margin: 10px auto;
     }
 
-    .brand {        
-        display: inline-block;
-        margin-top: 5px;
-    }
-
-    .app-bar {
-        position: sticky;
-        top: 0;
-    }
-    
-    .app-nav {
-        display: block;
-        float: right;
-        margin-top: 8px;
-    }
-
-    .app-nav a {
-        display: inline-block;
-    }
-
     .catalog-grid {
         grid-template-columns: 1fr 1fr 1fr;
-      }
-
-    .app-nav-collapse {
-          display: none;
       }
   }
