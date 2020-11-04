@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 :root {
     --primary: #0f68c2;
 }
@@ -9,8 +11,9 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(226, 233, 238);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Muli', sans-serif;
+    background-color: rgb(226, 233, 238);    
 }
 
 a {
@@ -24,6 +27,11 @@ a {
 
 .main {
     margin: 10px 10px;
+}
+
+.app-content {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .content-box {
@@ -45,6 +53,12 @@ a {
 
 .title-2 {
     font-weight: normal;
+    font-size: 1.4em;
+    color: var(--primary);
+}
+
+.title-3 {
+    font-weight: normal;
     font-size: 1.2em;
     color: var(--primary);
 }
@@ -54,6 +68,8 @@ a {
 /* APP BAR */
 
 .appbar {
+    background-image: url("images/body.png");
+    background-repeat: repeat;
     background-color:rgb(64, 75, 94);
     color: #fff;
     display: flex;
@@ -244,31 +260,31 @@ a {
 /* --------------- */
 
 @media screen and (min-width: 600px) {
-    .main {
+    /* .main {
         width: 60%;
         margin: 10px auto;
-    }
+    } */
 
     .catalog-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-      .appbar {
+    .appbar {
         flex-direction: row;
-      }
+    }
       
-      .appbar-collapse {
+    .appbar-collapse {
         display: none;
-      }
+    }
     
-      .appbar-nav {
+    .appbar-nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-      .detail-body {
+    .detail-body {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
