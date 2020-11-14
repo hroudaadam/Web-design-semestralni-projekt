@@ -15,151 +15,105 @@
 <body>
     <!-- Navigace -->
     <header class="appbar">
-        <div class="appbar-main">
-            <h1><a href="index.html">MELL.CZ</a></h1>
-            <!-- Rozevirani menu -->
-            <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html">MELL.CZ</a></h1>
+            <!-- Rozevírání menu -->
+            <button class="button button--secondary" onclick="collapseAppNav()">=</button>
         </div>
-        <nav class="appbar-nav">
-            <a class="active" href="catalog.html">Katalog</a>
-            <a class="" href="">Kontakty</a>
-            <a class="" href="cart.html">Košík</a>
+        <nav class="appbar__nav">
+            <a class="appbar__item appbar__item--active" href="catalog.html">Katalog</a>
+            <a class="appbar__item" href="">Kontakty</a>
+            <a class="appbar__item" href="cart.html">Košík</a>
         </nav>
     </header>
 
     <!-- Obsah -->
-    <main class="main">
-        <article class="app-content">
+    <main>
+        <div class="content">
             <!-- Mrizka katalogu -->
-            <section class="catalog-grid">
+            <section class="catalog">
                 <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div> 
+                <div class="box">
+                    <div class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
+                            <a href="detail.html" title="iPhone SE 128GB">
+                                <img class="catalog__image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
+                            </a>
+                        </header>
+                        <div class="catalog__body">
+                            <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
+                                interní paměť 64 GB
+                            </p>
+                        </div>
+                        <footer class="catalog__footer">
+                            <p class="price">14 999 ,-</p>
+                            <button class="button button--primary button--icon"><i class="fa fa-shopping-cart"></i></button>
+                        </footer>
+                    </div> 
+                </div>
                 <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div>  
+                <div class="box">
+                    <div class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
+                            <a href="detail.html" title="iPhone SE 128GB">
+                                <img class="catalog__image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
+                            </a>
+                        </header>
+                        <div class="catalog__body">
+                            <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
+                                interní paměť 64 GB
+                            </p>
+                        </div>
+                        <footer class="catalog__footer">
+                            <p class="price">14 999 ,-</p>
+                            <button class="button button--primary button--icon"><i class="fa fa-shopping-cart"></i></button>
+                        </footer>
+                    </div> 
+                </div>
                 <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div> 
+                <div class="box">
+                    <div class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
+                            <a href="detail.html" title="iPhone SE 128GB">
+                                <img class="catalog__image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
+                            </a>
+                        </header>
+                        <div class="catalog__body">
+                            <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
+                                interní paměť 64 GB
+                            </p>
+                        </div>
+                        <footer class="catalog__footer">
+                            <p class="price">14 999 ,-</p>
+                            <button class="button button--primary button--icon"><i class="fa fa-shopping-cart"></i></button>
+                        </footer>
+                    </div> 
+                </div>
                 <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div> 
-                <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div> 
-                <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div> 
-                <!-- Položka č. 1 -->
-                <div class="catalog-grid-item content-box">
-                    <header>
-                        <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
-                        <a href="detail.html" title="iPhone SE 128GB">
-                            <img class="catalog-image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
-                        </a>
-                    </header>
-                    <main class="grid-content">
-                        <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť 64 GB
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p class="catalog-price">14 999 ,-</p>
-                        <button class="button icon"><i class="fa fa-shopping-cart"></i></button>
-                    </footer>
-                </div>             
+                <div class="box">
+                    <div class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h2>
+                            <a href="detail.html" title="iPhone SE 128GB">
+                                <img class="catalog__image" src="images/tel1.jpg" alt="Tento obrázek nelze načíst">
+                            </a>
+                        </header>
+                        <div class="catalog__body">
+                            <p>Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
+                                interní paměť 64 GB
+                            </p>
+                        </div>
+                        <footer class="catalog__footer">
+                            <p class="price">14 999 ,-</p>
+                            <button class="button button--primary button--icon"><i class="fa fa-shopping-cart"></i></button>
+                        </footer>
+                    </div> 
+                </div>
             </section>
-        </article>
+        </div>
     </main>
 </body>
 

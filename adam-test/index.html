@@ -15,49 +15,51 @@
 <body>
     <!-- Navigace -->
     <header class="appbar">
-        <div class="appbar-main">
-            <h1><a href="index.html">MELL.CZ</a></h1>
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html">MELL.CZ</a></h1>
             <!-- Rozevírání menu -->
-            <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
+            <button class="button button--secondary" onclick="collapseAppNav()">=</button>
         </div>
-        <nav class="appbar-nav">
-            <a class="" href="catalog.html">Katalog</a>
-            <a class="" href="">Kontakty</a>
-            <a class="" href="cart.html">Košík</a>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html">Katalog</a>
+            <a class="appbar__item" href="">Kontakty</a>
+            <a class="appbar__item" href="cart.html">Košík</a>
         </nav>
     </header>
 
     <!-- Obsah -->
-    <main class="main">
-        <article class="app-content content-box">
-            <h2 class="title-2">Informace o projektu</h2>
-            <h3 class="title-3">Popis</h3>
-            <p>Projekt vypracovaný v rámci předmětu Web Design na <a href="https://www.czu.cz/cs/" target="_blank">České zemědělské univerzitě v roce 2020.</a></p>
-            <p>Jedná se o návrh webových stránek pro dále e-shop.</p>            
-            <h3 class="title-3">Autoři</h3>
-            <ul class="ul-fix">
-                <li>Dominik Bureš</li>
-                <li>Adam Hrouda</li>
-                <li>Filip Strejc</li>
-            </ul>
-            <h3 class="title-3">Požadavky</h3>
-            <ul class="ul-fix">
-                <li>6 HTML stránek: 1x úvod, 1x přehled produktů, 1x detail produktu, 3x obj. proces</li>
-                <li>cca 10 produktů</li>
-                <li>optimalizováno pro mobily, tablety - mobile-first přístup</li>
-                <li>sémantika v HTML</li>
-                <li>bez frameworků</li>
-                <li>flexbox - aspoň 5 prvků</li>
-                <li>grid layout - aspoň 10 prvků</li>
-                <li>nadpisy, odstavce, seznamy, obrázky</li>
-                <li>přístupnost pro handicapované - stačí základní</li>
-                <li>všechny soubory jsou pojmenovány malými písmeny, bez diakritiky a bez mezer a jsou umístěny ve
-                    složce public_html. Výchozí (úvodní) soubor se jmenuje index.html</li>
-                <li>webová prezentace je tvořena dokumenty ve validním kódu HTML5 dle validátoru W3C
-                    (http://validator.w3.org)</li>
-                <li>webová prezentace je formátována kaskádovými styly (CSS) z jednoho externího stylopisu</li>
-            </ul>
-        </article>
+    <main>
+        <div class="content">
+            <article class="box">
+                <h2 class="title-2">Informace o projektu</h2>
+                <h3 class="title-3">Popis</h3>
+                <p>Projekt vypracovaný v rámci předmětu Web Design na <a href="https://www.czu.cz/cs/" target="_blank">České zemědělské univerzitě v roce 2020.</a></p>
+                <p>Jedná se o návrh webových stránek pro dále e-shop.</p>            
+                <h3 class="title-3">Autoři</h3>
+                <ul class="ul-fix">
+                    <li>Dominik Bureš</li>
+                    <li>Adam Hrouda</li>
+                    <li>Filip Strejc</li>
+                </ul>
+                <h3 class="title-3">Požadavky</h3>
+                <ul class="ul-fix">
+                    <li>6 HTML stránek: 1x úvod, 1x přehled produktů, 1x detail produktu, 3x obj. proces</li>
+                    <li>cca 10 produktů</li>
+                    <li>optimalizováno pro mobily, tablety - mobile-first přístup</li>
+                    <li>sémantika v HTML</li>
+                    <li>bez frameworků</li>
+                    <li>flexbox - aspoň 5 prvků</li>
+                    <li>grid layout - aspoň 10 prvků</li>
+                    <li>nadpisy, odstavce, seznamy, obrázky</li>
+                    <li>přístupnost pro handicapované - stačí základní</li>
+                    <li>všechny soubory jsou pojmenovány malými písmeny, bez diakritiky a bez mezer a jsou umístěny ve
+                        složce public_html. Výchozí (úvodní) soubor se jmenuje index.html</li>
+                    <li>webová prezentace je tvořena dokumenty ve validním kódu HTML5 dle validátoru W3C
+                        (http://validator.w3.org)</li>
+                    <li>webová prezentace je formátována kaskádovými styly (CSS) z jednoho externího stylopisu</li>
+                </ul>
+            </article>
+        </div>
     </main>
 </body>
 
