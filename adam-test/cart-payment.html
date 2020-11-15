@@ -8,77 +8,97 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Navigace -->
+    <!-- APPBAR -->
     <header class="appbar">
-        <div class="appbar-main">
-            <h1><a href="index.html">MELL.CZ</a></h1>
-            <!-- Rozevirani menu -->
-            <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
         </div>
-        <nav class="appbar-nav">
-            <a class="" href="catalog.html">Katalog</a>
-            <a class="" href="">Kontakty</a>
-            <a class="active" href="cart.html">Košík</a>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html">Katalog</a>
+            <a class="appbar__item" href="">Kontakty</a>
+            <a class="appbar__item appbar__item--active" href="cart.html">Košík</a>
         </nav>
     </header>
 
-    <!-- Obsah -->
-    <main class="main">
-        <article class="app-content content-box">
-            <!-- Navigace košíku -->
-            <header class="cart-header">
-                <nav class="cart-nav">
-                    <a class="cart-nav-item" href="./cart.html">Obsah</a>
-                    <span class="cart-nav-item-separator">-</span>
-                    <a class="cart-nav-item" href="./cart-customer.html">Údaje</a>
-                    <span class="cart-nav-item-separator">-</span>
-                    <a class="cart-nav-item  active" href="./cart-payment.html">Dokončení</a>
-                </nav>
-            </header>
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+            <div class="cart box">
+                <!-- CART NAV -->
+                <header class="cart__header">
+                    <nav class="cart__nav">
+                        <a class="cart__nav-item" href="./cart.html">Obsah</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item" href="./cart-customer.html">Údaje</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item cart__nav-item--active" href="./cart-payment.html">Dokončení</a>
+                    </nav>
+                </header>
 
-            <!-- Formulář platby a dopravy -->
-            <form class="cart-payment-form">   
-                <!-- Doprava -->
-                <section class="cart-form-area">
-                    <h2 class="title-2">Doprava</h2>
-                    <fieldset>
-                        <input class="radio" type="radio" id="pickup" name="shipping" value="pickup">
-                        <label for="pickup">Osobní odběr</label>
-                    </fieldset>
+                <div class="cart__body">
+                    <!-- CART FORM -->
+                    <form class="cart__form">
+                        <!-- SHIPPING -->
+                        <section class="cart__form-sect">
+                            <h2 class="title-2">Doprava</h2>
+                            <fieldset class="cart__form-opt">
+                                <div>
+                                    <input class="radio" type="radio" id="pickup" name="shipping" value="pickup">
+                                    <label for="pickup">Osobní odběr</label>
+                                </div>
+                                <p class="cart__ship-price">zdarma</p>
+                            </fieldset>
+                            <fieldset class="cart__form-opt">
+                                <div>
+                                    <input class="radio" type="radio" id="deliver" name="shipping" value="deliver">
+                                    <label for="deliver">Doručení na adresu</label>
+                                </div>
+                                <p class="cart__ship-price">90 ,-</p>
+                            </fieldset>
+                            <fieldset class="cart__form-opt">
+                                <div>
+                                    <input class="radio" type="radio" id="post" name="shipping" value="post">
+                                    <label for="post">Balík na poštu</label>
+                                </div>
+                                <p class="cart__ship-price">50 ,-</p>
+                            </fieldset>
+                        </section>
 
-                    <fieldset>
-                        <input class="radio" type="radio" id="deliver" name="shipping" value="deliver">
-                        <label for="deliver">Doručení na adresu</label>
-                    </fieldset>
 
-                    <fieldset class="form-field">
-                        <input class="radio" type="radio" id="post" name="shipping" value="post">
-                        <label for="post">Balík na poštu</label>
-                    </fieldset>
-                </section>
-
-                <!-- Platba -->
-                <section class="cart-form-area">
-                    <h2 class="title-2">Platba</h2>
-                    <fieldset class="form-field">
-                        <input class="radio" type="radio" id="card" name="payment" value="card">
-                        <label for="card">Platba kartou online</label>
-                    </fieldset>
-
-                    <fieldset class="form-field">
-                        <input class="radio" type="radio" id="cash" name="payment" value="cash">
-                        <label for="cash">Hotovost</label>
-                    </fieldset>
-                </section>
-
-                <input class="button" type="submit" value="Dokončit"></input>
-            </form>
-
-        </article>
+                        <!-- PAYMENT -->
+                        <section class="cart__form-sect">
+                            <h2 class="title-2">Platba</h2>
+                            <fieldset class="cart__form-opt">
+                                <div>
+                                    <input class="radio" type="radio" id="card" name="payment" value="card">
+                                    <label for="card">Platba kartou online</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="cart__form-opt">
+                                <div>
+                                    <input class="radio" type="radio" id="cash" name="payment" value="cash">
+                                    <label for="cash">Hotovost</label>
+                                </div>
+                            </fieldset>
+                        </section>                      
+                    </form>
+                </div>
+                <!-- CART FOOTER -->
+                <footer class="cart__footer">
+                    <button class="button button--primary" onclick="document.location='cart-payment.html'">Odeslat</button>
+                    <div class="cart__price-sum">
+                        <p>Celkem</p>
+                        <p>32 798 ,-</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </main>
 </body>
 

@@ -8,50 +8,62 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Navigace -->
+    <!-- APPBAR -->
     <header class="appbar">
-        <div class="appbar-main">
-            <h1><a href="index.html">MELL.CZ</a></h1>
-            <!-- Rozevirani menu -->
-            <button class="appbar-collapse" onclick="collapseAppNav()">=</button>
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
         </div>
-        <nav class="appbar-nav">
-            <a class="" href="catalog.html">Katalog</a>
-            <a class="" href="">Kontakty</a>
-            <a class="active" href="cart.html">Košík</a>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html">Katalog</a>
+            <a class="appbar__item" href="">Kontakty</a>
+            <a class="appbar__item appbar__item--active" href="cart.html">Košík</a>
         </nav>
     </header>
 
-    <!-- Obsah -->
-    <main class="main">
-        <article class="app-content content-box">
-            <!-- Navigace košíku -->
-            <header class="cart-header">
-                <nav class="cart-nav">
-                    <a class="cart-nav-item" href="./cart.html">Obsah</a>
-                    <span class="cart-nav-item-separator">-</span>
-                    <a class="cart-nav-item active" href="./cart-customer.html">Údaje</a>
-                    <span class="cart-nav-item-separator">-</span>
-                    <a class="cart-nav-item" href="./cart-payment.html">Dokončení</a>
-                </nav>
-            </header>
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+            <div class="cart box">
+                <!-- CART NAV -->
+                <header class="cart__header">
+                    <nav class="cart__nav">
+                        <a class="cart__nav-item" href="./cart.html">Obsah</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item cart__nav-item--active" href="./cart-customer.html">Údaje</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item" href="./cart-payment.html">Dokončení</a>
+                    </nav>
+                </header>
 
-            <!-- Formulář údajů zákazníka -->
-            <form class="cart-customer-form">
-                <input class="form-text-input" type="text" id="firstName" placeholder="Jméno"></input>
-                <input class="form-text-input" type="text" id="lastName" placeholder="Příjmení"></input>
-                <input class="form-text-input" type="email" id="email" placeholder="Email"></input>
-                <input class="form-text-input" type="tel" id="phone" placeholder="Telefon"></input>
-                <input class="form-text-input" type="text" id="street" placeholder="Ulice"></input>
-                <input class="form-text-input" type="text" id="city" placeholder="Město"></input>
-                <input class="form-text-input" type="text" id="zip" placeholder="PSČ"></input>
-                <input class="button" type="submit" value="Pokračovat"></input>
-            </form>
-        </article>
+                <div class="cart__body">
+                    <!-- CART CUSTOMER FORM -->
+                    <form class="cart__form">
+                        <input class="cart__cust-input" type="text" id="firstName" placeholder="Jméno">
+                        <input class="cart__cust-input" type="text" id="lastName" placeholder="Příjmení">
+                        <input class="cart__cust-input" type="email" id="email" placeholder="Email">
+                        <input class="cart__cust-input" type="tel" id="phone" placeholder="Telefon">
+                        <input class="cart__cust-input" type="text" id="street" placeholder="Ulice">
+                        <input class="cart__cust-input" type="text" id="city" placeholder="Město">
+                        <input class="cart__cust-input" type="text" id="zip" placeholder="PSČ">
+                    </form>
+                </div>
+                <!-- CART FOOTER -->
+                <footer class="cart__footer">
+                    <button class="button button--primary" onclick="document.location='cart-payment.html'">Pokračovat</button>
+                    <div class="cart__price-sum">
+                        <p>Celkem</p>
+                        <p>32 798 ,-</p>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
     </main>
 </body>
 

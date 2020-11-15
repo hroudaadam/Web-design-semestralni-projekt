@@ -8,17 +8,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Navigace -->
+    <!-- APPBAR -->
     <header class="appbar">
         <div class="appbar__main">
             <h1 class="appbar__brand"><a href="index.html">MELL.CZ</a></h1>
-            <!-- Rozevírání menu -->
-            <button class="button button--secondary" onclick="collapseAppNav()">=</button>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
         </div>
         <nav class="appbar__nav">
             <a class="appbar__item" href="catalog.html">Katalog</a>
@@ -27,7 +27,7 @@
         </nav>
     </header>
 
-    <!-- Obsah -->
+    <!-- CONTENT -->
     <main>
         <div class="content">
             <article class="box">
