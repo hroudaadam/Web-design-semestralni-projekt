@@ -277,7 +277,7 @@ a {
 
 .cart__ship-price {
     font-style: italic;
-    color: gray;
+    color: rgb(41, 41, 41);
 }
 
 /* -------------------- DETAIL -------------------- */
