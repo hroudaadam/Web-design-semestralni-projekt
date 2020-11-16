@@ -147,7 +147,14 @@ a {
     grid-gap: 10px;
 }
 
-.catalog__body {
+.catalog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.catalog__desc {
     font-size: 0.8em;
 }
 
