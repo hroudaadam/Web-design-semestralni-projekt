@@ -44,22 +44,30 @@
                 <div class="cart__body">
                     <!-- CART CUSTOMER FORM -->
                     <form class="cart__form">
-                        <input class="cart__cust-input" type="text" id="firstName" placeholder="Jméno">
-                        <input class="cart__cust-input" type="text" id="lastName" placeholder="Příjmení">
-                        <input class="cart__cust-input" type="email" id="email" placeholder="Email">
-                        <input class="cart__cust-input" type="tel" id="phone" placeholder="Telefon">
-                        <input class="cart__cust-input" type="text" id="street" placeholder="Ulice">
-                        <input class="cart__cust-input" type="text" id="city" placeholder="Město">
-                        <input class="cart__cust-input" type="text" id="zip" placeholder="PSČ">
+                        <label for="firstName">Jméno:</label>
+                        <input class="cart__cust-input" type="text" id="firstName">
+                        <label for="lastName">Příjmení:</label>
+                        <input class="cart__cust-input" type="text" id="lastName">
+                        <label for="email">Email:</label>
+                        <input class="cart__cust-input" type="email" id="email">
+                        <label for="phone">Telefon:</label>
+                        <input class="cart__cust-input" type="tel" id="phone">
+                        <label for="street">Ulice:</label>
+                        <input class="cart__cust-input" type="text" id="street">
+                        <label for="city">Město:</label>
+                        <input class="cart__cust-input" type="text" id="city">
+                        <label for="zip">PSČ:</label>
+                        <input class="cart__cust-input" type="text" id="zip">
                     </form>
                 </div>
                 <!-- CART FOOTER -->
                 <footer class="cart__footer">
-                    <button class="button button--primary" onclick="document.location='cart-payment.html'">Pokračovat</button>
                     <div class="cart__price-sum">
                         <p>Celkem</p>
-                        <p>32 798 ,-</p>
+                        <p>29 191 ,-</p>
                     </div>
+                    <a class="button button--primary"
+                        href="./cart-payment.html">Pokračovat</a>
                 </footer>
             </div>
 

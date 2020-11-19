@@ -27,8 +27,13 @@ a {
     text-decoration: inherit;
 }
 
-.ul-fix {
+.list--dots-fixed {
     margin-left: 1.5em;
+}
+
+.list--dots-hidden {
+    margin-left: 0.3em;
+    list-style-type: none;
 }
 
 .content {
@@ -121,6 +126,7 @@ a {
 
 .appbar__nav--show {
     display: flex;
+    align-items: center;
 }
 
 .appbar__item {
@@ -129,6 +135,8 @@ a {
     padding: 7px;
     margin: 0 5px;
     border-radius: 4px;
+    text-align: center;
+    width: 100%;
 }
 
 .appbar__item:hover {
@@ -198,6 +206,8 @@ a {
 
 .cart__nav-item--active {
     font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
     text-decoration: none;
 }
 
@@ -232,7 +242,7 @@ a {
 }
 
 .cart__item--devider {
-    border-bottom-style: solid;
+    border-bottom-style: dashed;
     border-bottom-width: 1px;
     border-bottom-color: var(--gray);
 }
