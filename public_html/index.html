@@ -6,74 +6,60 @@
         MELL.CZ
     </title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Hlavička -->
-    <header class="appBar">
-        <h1 class="brand"><a href="index.html">Web design - projekt</a> </h1>
-
-        <nav>
-            <ul>
-                <li class="navItem">
-                    <!-- Navigační položka -->
-                    <a href="catalog.html">Katalog</a>
-                </li>
-                <li class="navItem">
-                    <!--Neaktivní položka -->
-                    <a href="">Kontakty</a>
-                </li>
-                <li class="navItem">
-                    <!-- Neaktivní položka -->
-                    <a href="">Obchodní podmínky</a>
-                </li>
-
-            </ul>
-        </nav>
-        <div class="right-bar">
-            <form>
-                <!-- Vyhledání -->
-                <label for="search">Hledat</label>
-                <input type="text" id="search"></input>
-                <input class="button1" id ="submit" type="submit" value="Hledat"></input>
-            </form>
-            <a href="cart.html" class="button1">Košík</a>
+    <!-- APPBAR -->
+    <header class="appbar">
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html" title="MELL.CZ">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars">=</i></button>
         </div>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html" title="Katalog">Katalog</a>
+            <a class="appbar__item" href="contacts.html" title="Kontakty">Kontakty</a>
+            <a class="appbar__item" href="cart.html" title="Košík">Košík</a>
+        </nav>
     </header>
 
+    <!-- CONTENT -->
     <main>
-        <article class="content-container">
-            <h3>Informace</h3>
-            <p>Projekt vypracovaný v rámci předmětu Web Design na České zemědělské univerzitě v roce 2020.</p>            
-            <p>Jedná se o návrh webových stránek pro dále nespecifikovaný eshop.</p>
-            <h3>Autoři</h3>
-            <p>
-                <ul>
-                    <li class="li-fix">Dominik Bureš</li>
-                    <li class="li-fix">Adam Hrouda</li>
-                    <li class="li-fix">Filip Strejc</li>
+        <div class="content">            
+            <article class="box">
+                <h2 class="title-2 title--center">Informace o projektu</h2>
+                <h3 class="title-3">Popis</h3>
+                <p>Projekt vypracovaný v rámci předmětu Web Design na <a href="https://www.czu.cz/cs/" target="_blank" title="České zemědělská univerzita">České zemědělské univerzitě v roce 2020.</a></p>
+                <p>Jedná se o simulaci webových stránek pro e-shop.</p>            
+                <h3 class="title-3">Autoři</h3>
+                <ul class="list list--dots-fixed">
+                    <li>Dominik Bureš</li>
+                    <li>Adam Hrouda</li>
+                    <li>Filip Strejc</li>
                 </ul>
-            </p>
-            <h3>Požadavky</h3>
-            <p>
-                <ul>
-                    <li class="li-fix">6 HTML stránek: 1x úvod, 1x přehled produktů, 1x detail produktu, 3x obj. proces</li>
-                    <li class="li-fix">cca 10 produktů</li>
-                    <li class="li-fix">optimalizováno pro mobily, tablety - mobile-first přístup</li>
-                    <li class="li-fix">sémantika v HTML</li>
-                    <li class="li-fix">bez frameworků</li>
-                    <li class="li-fix">flexbox - aspoň 5 prvků</li>
-                    <li class="li-fix">grid layout - aspoň 10 prvků</li>
-                    <li class="li-fix">nadpisy, odstavce, seznamy, obrázky</li>
-                    <li class="li-fix">přístupnost pro handicapované - stačí základní</li>
-                    <li class="li-fix">všechny soubory jsou pojmenovány malými písmeny, bez diakritiky a bez mezer a jsou umístěny ve složce public_html, výchozí (úvodní) soubor se jmenuje index.html</li>
-                    <li class="li-fix">webová prezentace je tvořena dokumenty ve validním kódu HTML5 dle validátoru W3C (http://validator.w3.org)</li>
-                    <li class="li-fix">webová prezentace je formátována kaskádovými styly (CSS) z jednoho externího stylopisu</li>
-
+                <h3 class="title-3">Požadavky</h3>
+                <ul class="list list--dots-hidden">
+                    <li><i class="fa fa-check-square"></i> 6 HTML stránek: 1x úvod, 1x přehled produktů, 1x detail produktu, 3x obj. proces </li>
+                    <li><i class="fa fa-check-square"></i> cca 10 produktů </li>
+                    <li><i class="fa fa-check-square"></i> optimalizováno pro mobily, tablety - mobile-first přístup </li>
+                    <li><i class="fa fa-check-square"></i> sémantika v HTML </li>
+                    <li><i class="fa fa-check-square"></i> bez frameworků </li>
+                    <li><i class="fa fa-check-square"></i> flexbox - aspoň 5 prvků </li>
+                    <li><i class="fa fa-check-square"></i> grid layout - aspoň 10 prvků </li>
+                    <li><i class="fa fa-check-square"></i> nadpisy, odstavce, seznamy, obrázky </li>
+                    <li><i class="fa fa-check-square"></i> přístupnost pro handicapované - stačí základní</li>
+                    <li><i class="fa fa-check-square"></i> všechny soubory jsou pojmenovány malými písmeny, bez diakritiky a bez mezer a jsou umístěny ve
+                        složce public_html. Výchozí (úvodní) soubor se jmenuje index.html </li>
+                    <li><i class="fa fa-check-square"></i> webová prezentace je tvořena dokumenty ve validním kódu HTML5 dle validátoru W3C
+                        (http://validator.w3.org)</li>
+                    <li><i class="fa fa-check-square"></i> webová prezentace je formátována kaskádovými styly (CSS) z jednoho externího stylopisu </li>
                 </ul>
-            </p>
-        </article>
+            </article>
+        </div>
     </main>
 </body>
 

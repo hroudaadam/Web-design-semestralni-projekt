@@ -6,93 +6,72 @@
         MELL.CZ
     </title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="colored-body">
-    <!-- Hlavička -->
-    <header class="appBar">
-        <h1 class="brand"><a href="index.html">Web design - projekt</a> </h1>
-
-        <nav>
-            <ul>
-                <li class="navItem">
-                    <!-- Navigační položka -->
-                    <a href="catalog.html">Katalog</a>
-                </li>
-                <li class="navItem">
-                    <!--Neaktivní položka -->
-                    <a href="">Kontakty</a>
-                </li>
-                <li class="navItem">
-                    <!-- Neaktivní položka -->
-                    <a href="">Obchodní podmínky</a>
-                </li>
-
-            </ul>
-        </nav>
-        <div class="right-bar">
-            <form>
-                <!-- Vyhledání -->
-                <label for="search">Hledat</label>
-                <input type="text" id="search"></input>
-                <input class="button1" type="submit" value="Hledat"></input>
-            </form>
-            <a href="cart.html" class="button1">Košík</a>
+<body>
+    <!-- APPBAR -->
+    <header class="appbar">
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html" title="MELL.CZ">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
         </div>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html" title="Katalog">Katalog</a>
+            <a class="appbar__item" href="contacts.html" title="Kontakty">Kontakty</a>
+            <a class="appbar__item appbar__item--active" href="cart.html" title="Košík">Košík</a>
+        </nav>
     </header>
 
+    <!-- CONTENT -->
     <main>
-        <article class="content-container">
-            <header class="cart-header">
-                <nav>
-                    <ul class="cart-nav-list">
-                        <li class="cart-nav-item">
-                            <a class="cart-nav-item-title" href="./cart.html">Obsah košíku</a>
-                            <span class="cart-nav-item-divider">></span>
-                        </li>
-                        <li class="cart-nav-item cart-nav-item--active">
-                            <a class="cart-nav-item-title" href="">Dodací údaje</a>
-                            <span class="cart-nav-item-divider">></span>
-                        </li>
-                        <li class="cart-nav-item"> 
-                            <a class="cart-nav-item-title" href="./cart-payment.html">Dokončení objednávky</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <form class="form">
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="text" id="firstName" placeholder="Jméno"></input>
-                </fieldset>
+        <div class="content">
+            <div class="cart box">
+                <!-- CART NAV -->
+                <header class="cart__header">
+                    <nav class="cart__nav">
+                        <a class="cart__nav-item" href="cart.html" title="Obsah">Obsah</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item cart__nav-item--active" href="./cart-customer.html" title="Údaj">Údaje</a>
+                        <span class="cart__nav-separator">-</span>
+                        <a class="cart__nav-item" href="./cart-payment.html" title="Dokončení">Dokončení</a>
+                    </nav>
+                </header>
 
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="text" id="lastName" placeholder="Příjmení"></input>
-                </fieldset>
+                <div class="cart__body">
+                    <!-- CART CUSTOMER FORM -->
+                    <form class="cart__form">
+                        <label for="firstName">Jméno:</label>
+                        <input class="cart__cust-input" type="text" id="firstName">
+                        <label for="lastName">Příjmení:</label>
+                        <input class="cart__cust-input" type="text" id="lastName">
+                        <label for="email">Email:</label>
+                        <input class="cart__cust-input" type="email" id="email">
+                        <label for="phone">Telefon:</label>
+                        <input class="cart__cust-input" type="tel" id="phone">
+                        <label for="street">Ulice:</label>
+                        <input class="cart__cust-input" type="text" id="street">
+                        <label for="city">Město:</label>
+                        <input class="cart__cust-input" type="text" id="city">
+                        <label for="zip">PSČ:</label>
+                        <input class="cart__cust-input" type="text" id="zip">
+                    </form>
+                </div>
+                <!-- CART FOOTER -->
+                <footer class="cart__footer">
+                    <div class="cart__price-sum">
+                        <p>Celkem</p>
+                        <p>29 191 ,-</p>
+                    </div>
+                    <a class="button button--primary"
+                        href="./cart-payment.html" title="Pokračovat">Pokračovat</a>
+                </footer>
+            </div>
 
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="email" id="email" placeholder="Email"></input>
-                </fieldset>
-
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="tel" id="phone" placeholder="Telefon"></input>
-                </fieldset>
-
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="text" id="street" placeholder="Ulice"></input>
-                </fieldset>
-
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="text" id="city" placeholder="Město"></input>
-                </fieldset>
-
-                <fieldset class="form-field">
-                    <input class="form-text-input" type="text" id="zip" placeholder="PSČ"></input>
-                </fieldset>
-
-                <input class="button center" type="submit" value="Pokračovat"></input>
-            </form>
-        </article>
+        </div>
     </main>
 </body>
 

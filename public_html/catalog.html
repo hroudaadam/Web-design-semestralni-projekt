@@ -6,311 +6,224 @@
         MELL.CZ
     </title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Hlavička -->
-    <header class="appBar">
-        <h1 class="brand"><a href="index.html">Web design - projekt</a> </h1>
-
-        <nav>
-            <ul>
-                <li class="navItem">
-                    <!-- Navigační položka -->
-                    <a href="catalog.html">Katalog</a>
-                </li>
-                <li class="navItem">
-                    <!--Neaktivní položka -->
-                    <a href="">Kontakty</a>
-                </li>
-                <li class="navItem">
-                    <!-- Neaktivní položka -->
-                    <a href="">Obchodní podmínky</a>
-                </li>
-
-            </ul>
-        </nav>
-        <div class="right-bar">
-            <form>
-                <!-- Vyhledání -->
-                <label for="search">Hledat</label>
-                <input type="text" id="search"></input>
-                <input class="button1" type="submit" value="Hledat"></input>
-            </form>
-            <a href="cart.html" class="button1">Košík</a>
+    <!-- APPBAR -->
+    <header class="appbar">
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html" title="MELL.CZ">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
         </div>
+        <nav class="appbar__nav">
+            <a class="appbar__item appbar__item--active" href="catalog.html" title="Katalog">Katalog</a>
+            <a class="appbar__item" href="contacts.html" title="Kontakty">Kontakty</a>
+            <a class="appbar__item" href="cart.html" title="Košík">Košík</a>
+        </nav>
     </header>
 
+    <!-- CONTENT -->
     <main>
-        <article class="content-container">
-            <section class="grid-container">
+        <div class="content">
+            
+            <!-- SEARCH -->
+            <form class="search box">
+                <div class="search__main">
+                    <label class="search__label" for="firstName">Hledat:</label>
+                    <input class="search__input" type="text" id="firstName">
+                </div>                
+                <button class="button button--primary button--icon" title="Hledat"><i
+                class="fa fa-search"></i></button>
+            </form>
 
-                <!--položka č. 1-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Xiaomi Redmi Note 8T LTE 64GB</a></h3>
-                        <div class="grid-image">
-                            <a href="detail.html" title="iPhone SE 128GB">
-                                <img id="image" src="images/tel1.jpg" width="35%"
-                                    alt="Tento obrázek nelze načíst">
+            <!-- GCATALOG GRID -->
+            <div class="catalog">
+                <!-- ITEM 1 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Xiaomi Redmi Note 8T</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel1.jpg" alt="Xiaomi Redmi Note 8T">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 665 8jádrový, RAM 4 GB,
-                            interní paměť
-                            64 GB,
-                            Micro SDXC až 256 GB, zadní fotoaparát 48 Mpx (f/1,8) + 8 Mpx (f/2,2) + 2 Mpx (f/2,4) + 2
-                            Mpx (f/2,4),
-                            přední fotoaparát 13 Mpx,
-                            elektronická stabilizace, GPS, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků, dual SIM +
-                            paměťová karta,
-                            neblokovaný,
-                            rychlé nabíjení 18W, baterie 4000 mAh, Android 9.0 Pie
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>4 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon
+                                665 8jádrový, RAM 4
+                                GB, interní paměť 64 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">5 185 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 2-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">iPhone SE 128GB</a></h3>
-                        <div class="grid-image">
-                            <a href="detail.html" title="iPhone SE 128GB">
-                                <img src="images/tel2.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 2 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">iPhone SE 128GB</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel2.jpg" alt="iPhone SE 128GB">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                            Mobilní telefon 4,7" IPS 1334 × 750, procesor Apple A13 Bionic 6jádrový, RAM 3 GB, interní
-                            paměť 128 GB,
-                            zadní fotoaparát 12 Mpx (f/1,8), přední fotoaparát 7 Mpx, optická stabilizace, GPS, Glonass,
-                            NFC, LTE,
-                            Lightning port, čtečka otisků, voděodolný dle IP67, single SIM + eSIM, neblokovaný, rychlé
-                            nabíjení 18W,
-                            bezdrátové nabíjení, iOS 13
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>14 499 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 4,7" IPS 1334 × 750, procesor Apple A13 Bionic
+                                6jádrový, RAM 3 GB, interní paměť 128 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">14 309 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 3-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">iPhone 11 256GB</a></h3>                        
-                        <div class="grid-image">
-                            <a href="detail.html" title="iPhone 11 256GB">
-                                <img src="images/tel3.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 3 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">iPhone 11 256GB</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel3.jpg" alt="iPhone 11 256GB">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                            Mobilní telefon 4,7" IPS 1334 × 750, procesor Apple A13 Bionic 6jádrový, RAM 3 GB, interní
-                            paměť 128 GB,
-                            zadní fotoaparát 12 Mpx (f/1,8), přední fotoaparát 7 Mpx, optická stabilizace, GPS, Glonass,
-                            NFC, LTE,
-                            Lightning port, čtečka otisků, voděodolný dle IP67, single SIM + eSIM, neblokovaný, rychlé
-                            nabíjení 18W,
-                            bezdrátové nabíjení, iOS 13
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>24 499 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,1" IPS 1792 × 828, procesor Apple A13 Bionic
+                                6jádrový, RAM 4 GB, interní paměť 256 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">22 792 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 4-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Samsung Galaxy A51</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Samsung Galaxy A51">
-                                <img src="images/tel4.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 4 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Samsung Galaxy A51</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel4.jpg" alt="Samsung Galaxy A51">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">Mobilní telefon 6,5" AMOLED 2400 × 1080, procesor Samsung Exynos 9611 8jádrový, RAM 4 GB,
-                            interní paměť 128 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/2) + 12 Mpx (f/2,2) +
-                            5 Mpx (f/2,4) + 5 Mpx (f/2,2), přední fotoaparát 32 Mpx, elektronická stabilizace, GPS,
-                            Glonass,
-                            NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová karta,
-                            neblokovaný, rychlé
-                            nabíjení 15W, baterie 4000 mAh, Android 10
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>4 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,5" AMOLED 2400 × 1080, procesor Samsung Exynos
+                                9611 8jádrový, RAM 4 GB, interní paměť 128 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">6 999 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-
-                <!--položka č. 5-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Samsung Galaxy S20</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Samsung Galaxy S20">
-                                <img src="images/tel5.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 5 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Samsung Galaxy S20</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel5.jpg" alt="Samsung Galaxy S20">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                            Mobilní telefon 6,2" AMOLED 3200 × 1440, 120Hz, procesor Samsung Exynos 990 8jádrový, RAM 8
-                            GB, interní
-                            paměť 128 GB, Micro SDXC až 1000 GB, zadní fotoaparát s optickým zoomem 12 Mpx (f/1,8) + 64
-                            Mpx (f/2) +
-                            12 Mpx (f/2,2), přední fotoaparát 10 Mpx, optická stabilizace, GPS, Glonass, NFC, LTE,
-                            USB-C, čtečka
-                            otisků v displeji, voděodolný dle IP68, hybridní slot, neblokovaný, rychlé nabíjení 25W,
-                            bezdrátové
-                            nabíjení 15W, reverzní nabíjení 9W, baterie 4000 mAh, Android 10
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>22 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,2" AMOLED 3200 × 1440, 120Hz, procesor Samsung
+                                Exynos 990 8jádrový, RAM 8 GB, interní paměť 128 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">17 490 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 6-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Samsung Galaxy Note 20 Ultra 5G</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Samsung Galaxy Note 20 Ultra 5G">
-                                <img src="images/tel6.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 6 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Samsung Galaxy Note 20</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel6.jpg" alt="Samsung Galaxy Note 20">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">Mobilní telefon 6,9" AMOLED 3088 × 1440, 120Hz, procesor Samsung Exynos 990 8jádrový, RAM 12
-                            GB, interní
-                            paměť 256 GB, Micro SD až 1000 GB, zadní fotoaparát s optickým zoomem 108 Mpx (f/1,8) + 12
-                            Mpx (f/3) +
-                            12 Mpx (f/2,2), přední fotoaparát 10 Mpx, optická stabilizace, GPS, Glonass, NFC, LTE, 5G,
-                            USB-C, čtečka
-                            otisků v displeji, voděodolný dle IP68, hybridní slot + eSIM, neblokovaný, rychlé nabíjení
-                            25W,
-                            bezdrátové nabíjení 15W, reverzní nabíjení 9W, stylus, baterie 4500 mAh, Android 10
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>35 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,9" AMOLED 3088 × 1440, 120Hz, procesor Samsung
+                                Exynos 990 8jádrový, RAM 12 GB, interní paměť 256 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">34 434 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                    class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 7-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Samsung Galaxy A41</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Samsung Galaxy A41">
-                                <img src="images/tel7.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 7 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Samsung Galaxy A41</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel7.jpg" alt="Samsung Galaxy A41">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                          Mobilní telefon 6,1" AMOLED 2400 × 1080, 8jádrový procesor, RAM 4 GB, interní paměť 64 GB,
-                            Micro SD až
-                            512 GB, zadní fotoaparát 48 Mpx (f/2) + 8 Mpx (f/2,2) + 5 Mpx (f/2,4), přední fotoaparát 25
-                            Mpx, GPS,
-                            Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků v displeji, dual SIM + paměťová
-                            karta,
-                            neblokovaný, rychlé nabíjení 15W, baterie 3500 mAh, Android 10
-                        </main>
-                    <footer class="grid-footer">
-                        <p>4 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,1" AMOLED 2400 × 1080, 8jádrový procesor, RAM 4
+                                GB, interní paměť 64 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">6 399 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 8-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Lenovo K10 Note</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Lenovo K10 Note">
-                                <img src="images/tel8.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 8 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Lenovo K10 Note</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel8.jpg" alt="Lenovo K10 Note">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                            Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon 710 8jádrový, RAM 6 GB,
-                            interní paměť
-                            128 GB, Micro SD až 256 GB, zadní fotoaparát s optickým zoomem 16 Mpx (f/1,8) + 8 Mpx
-                            (f/2,4) + 2 Mpx
-                            (f/2,2), přední fotoaparát 16 Mpx, GPS, LTE, USB-C, čtečka otisků, dual SIM, neblokovaný,
-                            rychlé
-                            nabíjení 18W, baterie 4050 mAh, Android 9.0 Pie
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>4 444 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,3" IPS 2340 × 1080, procesor Qualcomm Snapdragon
+                                710 8jádrový, RAM 6 GB, interní paměť 128 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">4 459 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 9-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Huawei P40 Lite</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Huawei P40 Lite">
-                                <img src="images/tel9.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 9 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Huawei P40 Lite</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel9.jpg" alt="Huawei P40 Lite">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">Mobilní telefon 6,4" IPS 2310 × 1080, 8jádrový procesor, RAM 6 GB, interní paměť 128 GB, NM
-                            Card až 512
-                            GB, zadní fotoaparát 48 Mpx (f/1,8) + 8 Mpx (f/2,4) + 2 Mpx (f/2,4) + 2 Mpx (f/2,4), přední
-                            fotoaparát
-                            16 Mpx, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků, hybridní slot,
-                            neblokovaný, baterie
-                            4200 mAh, Android 10, Huawei Mobile Services
-                        </p>
-                    </main>
-                    <footer class="grid-footer">
-                        <p>5 999 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,4" IPS 2310 × 1080, 8jádrový procesor, RAM 6 GB,
+                                interní paměť 128 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">5 999 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-                <!--položka č. 10-->
-                <div class="grid-item">
-                    <header class="grid-header">
-                        <h3 class="grid-title"><a href="detail.html">Huawei P30 Lite NEW EDITION 256GB</a></h3>                      
-                        <div class="grid-image">
-                            <a href="detail.html" title="Huawei P30 Lite NEW EDITION 256GB">
-                                <img src="images/tel10.jpg" width="35%" alt="Tento obrázek nelze načíst">
+                <!-- ITEM 10 -->
+                <div class="box">
+                    <section class="catalog__item">
+                        <header class="catalog__header">
+                            <h2 class="title-2"><a href="detail.html">Huawei P30 Lite 256GB</a></h2>
+                            <a href="detail.html">
+                                <img class="catalog__image" src="images/tel10.jpg" alt="Huawei P30 Lite 256GB">
                             </a>
-                        </div>
-                    </header>
-                    <main class="grid-content">
-                        <p class="grid-contetnt-text">
-                            Mobilní telefon 6,15" LTPS 2312 × 1080, procesor HiSilicon Kirin 710 8jádrový, RAM 6 GB,
-                            interní paměť
-                            256 GB, Micro SD až 512 GB, zadní fotoaparát 48 Mpx (f/1,8) + 8 Mpx (f/2,4) + 2 Mpx (f/2,4),
-                            přední
-                            fotoaparát 32 Mpx, GPS, Glonass, NFC, LTE, Jack (3,5mm) a USB-C, čtečka otisků, hybridní
-                            slot,
-                            neblokovaný, rychlé nabíjení 18W, baterie 3340 mAh, Android 9.0 Pie </p>
-                        </main>
-                    <footer class="grid-footer">
-                        <p>7 299 ,-</p>
-                        <button class="button1">Přidat do košíku</button>
-                    </footer>
+                            <p class="catalog__desc">Mobilní telefon 6,15" LTPS 2312 × 1080, procesor HiSilicon Kirin 710 8jádrový, RAM 6 GB, interní paměť 256 GB</p>
+                        </header>
+                        <footer class="catalog__footer">
+                            <p class="price">6 499 ,-</p>
+                            <a class="button button--primary button--icon" href="./cart.html" title="Koupit"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        </footer>
+                    </section>
                 </div>
-            </section>
-        </article>
+            </div>
+        </div>
     </main>
 </body>
 
