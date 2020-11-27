@@ -45,4 +45,5 @@
 - Huawei P30 Lite NEW EDITION 256GB - https://www.alza.cz/huawei-p30-lite?dq=5813326
 
 ## TODO
-- label místo placeholderu
+- title na odkazy [nové okno]
+

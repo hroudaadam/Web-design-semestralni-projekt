@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <title>
+        MELL.CZ
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- APPBAR -->
+    <header class="appbar">
+        <div class="appbar__main">
+            <h1 class="appbar__brand"><a href="index.html" title="MELL.CZ">MELL.CZ</a></h1>
+            <button class="button button--basic" onclick="collapseAppNav()"><i class="fa fa-bars"></i></button>
+        </div>
+        <nav class="appbar__nav">
+            <a class="appbar__item" href="catalog.html" title="Katalog">Katalog</a>
+            <a class="appbar__item appbar__item--active" href="contacts.html" title="Kontakty">Kontakty</a>
+            <a class="appbar__item" href="cart.html" title="Košík">Košík</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">            
+            <article class="box">
+                <h2 class="title-2 title--center">Kontakty</h2>
+                <div class="contact">
+                    <div class="contact__item">
+                        <h3 class="title-3"><i class="fa fa-map-marker"></i> Adresa </h3>
+                        <p>Mell.cz, a.s.</p> 
+                        <p>U hrnců 162/4</p> 
+                        <p>170 00 Praha 7</p>                        
+                    </div>
+                    <div class="contact__item">
+                        <h3 class="title-3"><i class="fa fa-envelope"> </i> Kontakt</h3>
+                        <p>+420 294 522 024</p> 
+                        <p><a href="mailto:info@mell.cz" title="email">info@mell.cz</a></p> 
+                        <p>170 00 Praha 7</p>  
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7229712490553!2d14.451008567596835!3d50.072749582698606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b937c5a63fb43%3A0x568a21836ec019fc!2sSuperHosting!5e0!3m2!1scs!2scz!4v1606504695334!5m2!1scs!2scz" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
