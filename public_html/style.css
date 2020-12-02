@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root {
-    /* --primary: #0f68c2; */
     --primary: #0657a8;
     --gray: gray;    
 }
@@ -112,8 +111,6 @@ a {
 /* ------------------- APPBAR -------------------- */
 
 .appbar {
-    /* background-color:rgb(64, 75, 94); */
-    /* background-color:rgb(97, 107, 126); */
     background-color: var(--primary);
     color: #fff;
     display: flex;
@@ -150,7 +147,6 @@ a {
     border-color: transparent;
     border-radius: 4px;
     text-align: center;
-    /* width: 100%; */
 }
 
 .appbar__item:hover {
