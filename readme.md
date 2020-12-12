@@ -32,7 +32,7 @@
     - Metodický pokyn k zákonu č. 99/2019 Sb., o přístupnosti internetových stránek a mobilních aplikací a o změně zákona č. 365/2000 Sb., o informačních systémech veřejné správy a o změně některých dalších zákonů, ve znění pozdějších předpisů
 - alespoň na úvodní stránce je uvedeno viditelné upozornění, že se jedná o studentský projekt
 - obrázky použité ve WWW prezentaci nejsou „deformovány“ pouze atributy width a height. Obrázky, které mají dekorativní funkci, jsou vloženy prostřednictvím CSS.
-## katalog telefonů
+## Katalog telefonů
 - Xiaomi Redmi Note 8T LTE 64GB - https://www.alza.cz/xiaomi-redmi-note-8t-lte?dq=5670506
 - iPhone SE 128GB - https://www.alza.cz/iphone-se-128gb-cerna-2020-d5826608.htm
 - iPhone 11 256GB - https://www.alza.cz/iphone-11?dq=5669261
